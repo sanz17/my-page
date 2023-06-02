@@ -3,7 +3,8 @@ import Container from 'react-bootstrap/Container';
 import { Row, Col } from 'react-bootstrap';
 import { ArrowRightCircle } from 'react-bootstrap-icons';
 import headerImg from '../assets/img/big.png'
-import 'animate.css'
+import 'animate.css';
+import { Know } from "./Know";
 import TrackVisibility from 'react-on-screen';
 
 export const Banner = () => {
@@ -13,7 +14,8 @@ export const Banner = () => {
     const period = 2000;
     const [delta, setDelta] = useState(300 - Math.random() * 100);
     const [index, setIndex] = useState(1);
-    const toRotate = ["Sanhita"];
+    const toRotate = ["Sanhita Kundu"];
+    
 
     useEffect(() => {
         let ticker = setInterval(() => {
@@ -52,10 +54,12 @@ export const Banner = () => {
             <Container>
                 <Row className='align-items-center'>
                     <Col xs={12} md={6} xl={7}>
-                        <span className='tagLine'>Hi ! You have finally discovered meeee</span>
+                        <span className='tagLine'>You can call me Sanz</span>
                         <h1>{`I'm `}<span className='wrap'>{text}</span></h1>
-                        <p>I'm just a small girl who has great interest in techs. I can spend hours exploring new domains and technologies. And I am a bit sensitive &#127773;</p>
-                        <button onClick={() => console.log('connect')}>Connect with me <ArrowRightCircle size={25} /></button>
+                        <p>I am a passionate tech enthusiast and have worked with fullstack projects, electronics and IoT projects with some hands-on experience in DevOps. I use Linux :) </p>
+                        <p>I also build drones sometimes</p>
+                        <button onClick={() => 
+                            console.log("Connext")}>Find me on medium <ArrowRightCircle size={25} /></button>
                     </Col>
                     <Col xs={12} md={6} xl={5}>
                         <TrackVisibility>
