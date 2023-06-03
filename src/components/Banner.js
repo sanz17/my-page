@@ -8,6 +8,9 @@ import { Know } from "./Know";
 import TrackVisibility from 'react-on-screen';
 
 export const Banner = () => {
+    const medium = () => {
+        window.location.href = 'https://medium.com/@sanz17';
+      };
     const [loopNum, setLoopNum] = useState(0);
     const [isDeleting, setIsDeleting] = useState(false);
     const [text, setText] = useState('');
@@ -58,8 +61,8 @@ export const Banner = () => {
                         <h1>{`I'm `}<span className='wrap'>{text}</span></h1>
                         <p>I am a passionate tech enthusiast and have worked with fullstack projects, electronics and IoT projects with some hands-on experience in DevOps. I use Linux :) </p>
                         <p>I also build drones sometimes</p>
-                        <button onClick={() => 
-                            console.log("Connext")}>Find me on medium <ArrowRightCircle size={25} /></button>
+                        <button 
+                            onClick={() => medium()}>Find me on medium <ArrowRightCircle size={25} /></button>
                     </Col>
                     <Col xs={12} md={6} xl={5}>
                         <TrackVisibility>
