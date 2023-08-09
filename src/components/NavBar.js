@@ -11,7 +11,7 @@ const NavBar = () => {
   const [activeLink, setActiveLink] = useState('home');
   const [scrolled, setScrolled] = useState(false);
   const redirectToPage = () => {
-    window.location.href = 'https://docs.google.com/document/d/1oZV-IU70qqkOeUX9KtwjpwlU5we7jmPR_H8pAf_nZeI/edit#heading=h.gjdgxs'; // Replace '/new-page' with the desired URL
+    window.location.href = 'https://drive.google.com/file/d/1vb50-YJYVvWuuIf7i919w89dka0n24vf/view'; // Replace '/new-page' with the desired URL
   };
 
   useEffect(() => {

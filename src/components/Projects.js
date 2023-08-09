@@ -3,7 +3,8 @@ import { ProjectCard } from "./ProjectCard";
 import projImg1 from "../assets/img/weathery.png";
 import projImg2 from "../assets/img/toi.jpeg";
 import projImg3 from "../assets/img/da.png";
-import projImg4 from "../assets/img/sfs.png";
+import fitup from "../assets/img/fitup.png";
+import geth from "../assets/img/geth.png"
 import projImg5 from "../assets/img/lungs.jpeg";
 import h1 from "../assets/img/firebase.jpeg";
 import h2 from "../assets/img/micro.png";
@@ -21,6 +22,18 @@ export const Projects = () => {
 
   const projects1 = [
     {
+      title: "Geth-containerizaztion",
+      description: "Containerfile that can be used as a build toolchain for Geth(Go-ethereum).",
+      imgUrl: geth,
+      
+    },
+    {
+      title: "FitUp",
+      description: "combines the power of technology, gamification, fitness and driver behaviour tracking to make your fitness and wellness journey engaging and rewarding, For HackRx, Bajaj Finserv.",
+      imgUrl: fitup,
+      
+    },
+    {
       title: "Weathery",
       description: "WeatherApp with ReactJS, OpenWeatherAPI",
       imgUrl: projImg1,
@@ -35,11 +48,6 @@ export const Projects = () => {
       title: "DA reminder",
       description: "Chrome extension",
       imgUrl: projImg3,
-    },
-    {
-      title: "Secure file storage",
-      description: "Frontend using ReactJS",
-      imgUrl: projImg4,
     },
     {
       title: "Pneumonia detection",
